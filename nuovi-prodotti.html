@@ -75,7 +75,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="./prodotti.html" class="nav-link text-white">
+                                <a href="./prodotti.html" class="nav-link text-white nav-link">
                                     <svg class="bi pe-none me-2" width="16" height="16">
                                         <use xlink:href="#table"></use>
                                     </svg>
@@ -83,7 +83,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="./nuovi-prodotti.html" class="nav-link text-white nav-link active">
+                                <a href="./nuovi-prodotti.html" class="nav-link text-white active">
                                     <svg class="bi pe-none me-2" width="16" height="16">
                                         <use xlink:href="#grid"></use>
                                     </svg>
@@ -120,6 +120,72 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-2 m-3 p-2
+                flex-grow-1">
+
+                    <div class="pricing-header pb-md-4 mx-auto text-center">
+                        <h1 class="display-6 fw-semibold text-body-emphasis">Crea un nuovo prodotto</h1>
+                        <p>I campi contrassegnati con un asterisco (*) <br> sono obbligatori. <br> Le immaggini devono
+                            essere in formato PNG <br> e non devono superare i 4MB di dimensione.</p>
+                    </div>
+          <div class="content p-2">
+            <div class="row"> 
+              <div class="col-sm-12 col-lg-7 py-2">
+                <form action="">
+                  <div class="content ">
+                    <div class="row">
+                      <div class="col-sm-12 col-lg-4 mb-2">
+                        <label for="inputName" class="fw-semibold">Nome</label>
+                      </div>
+                      <div class="col-sm-12 col-lg-8 mb-3">
+                        <input type="text" id="inputName" class="form-control" placeholder="Samsung Galaxy 10Plus">
+                      </div>
+                      <div class="col-sm-12 col-lg-4 mb-2">
+                        <label for="inputPrice" class="fw-semibold">Prezzo</label>
+                      </div>
+                      <div class="col-sm-12 col-lg-8">
+                        <input type="text" id="inputPrice" class="form-control mb-3" placeholder="99.00">
+                      </div>
+                      <div class="col-sm-12 col-lg-4 mb-2">
+                        <label for="inputBrand" class="fw-semibold">Marca</label>
+                      </div>
+                      <div class="col-sm-12 col-lg-8">
+                        <select class="form-select form-select-md mb-3" aria-label="Select an option">
+                          <option selected><span class="fw-semibold">--Seleziona--</span></option>
+                          <option value="1">Samsung Galaxy 10</option>
+                          <option value="2">Samsung Galaxy </option>
+                          <option value="3">Samsung Galaxy A12</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-12 col-lg-12">
+                        <div class="mb-3">
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Inserisci la descrizione del prodotto, massimo 1000 caratteri"></textarea>
+                        </div>
+                      </div>
+                      <div class="input-group mb-3">
+                        <input type="file" class="form-control" id="inputGroupFile02">
+                        <label class="input-group-text fw-semibold" for="inputGroupFile02">immagine</label>
+                      </div>
+                      <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                        <label class="btn btn-outline-secondary" for="btncheck1">Disponibile</label>
+                      
+                        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                        <label class="btn btn-outline-secondary" for="btncheck2">Esaurito</label>
+
+                        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                        <label class="btn btn-outline-secondary" for="btncheck3">Fuori produzione</label>
+                      
+                        <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                        <label class="btn btn-outline-secondary" for="btncheck4">In arrivo</label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
